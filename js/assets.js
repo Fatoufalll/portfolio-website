@@ -72,6 +72,7 @@ const ASSETS = {
   /* ── PDFs ────────────────────────────────────────────────── */
   pdfs: {
     cv:            'assets/pdfs/CV_Fatou_FALL.pdf',
+    tableauE5:     'assets/pdfs/tableau_synthese_E5.pdf',
     pix:           'assets/pdfs/certification_pix.pdf',
     projetPython:  'assets/pdfs/projet_python.pdf',
     rgpd: {
