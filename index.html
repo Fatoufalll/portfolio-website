@@ -444,8 +444,19 @@
 <div class="modal-overlay" id="modal-memory">
   <div class="modal-box">
     <button class="modal-close">&times;</button>
-    <img src="assets/images/projects/memory_flower.png" class="modal-img" alt="Memory Flower"/>
     <h2 class="modal-title">🌸 Memory Flower</h2>
+    <div class="proj-carousel">
+      <div class="proj-carousel-track">
+        <div class="proj-carousel-slide"><img src="assets/images/projects/memory_flower.png" alt="Jeu"/><div class="slide-caption">Jeu de mémoire en cours</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/memory_code.png" alt="Code JS"/><div class="slide-caption">Code JavaScript</div></div>
+      </div>
+      <button class="proj-carousel-btn proj-carousel-prev" onclick="ProjCarousel.prev('modal-memory')"><i class="fas fa-chevron-left"></i></button>
+      <button class="proj-carousel-btn proj-carousel-next" onclick="ProjCarousel.next('modal-memory')"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="proj-carousel-dots">
+      <div class="proj-dot active" onclick="ProjCarousel.go('modal-memory',0)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-memory',1)"></div>
+    </div>
     <p class="modal-desc">
     <strong>Contexte :</strong> Projet personnel réalisé en dehors des cours pour approfondir mes compétences en JavaScript et animations CSS.<br/><br/>
     <strong>Ce que j'ai développé :</strong><br/>
@@ -468,6 +479,22 @@
   <div class="modal-box">
     <button class="modal-close">&times;</button>
     <h2 class="modal-title">🐍 Boîte à outils Python</h2>
+    <div class="proj-carousel">
+      <div class="proj-carousel-track">
+        <div class="proj-carousel-slide"><img src="assets/images/projects/python.png" alt="Interface"/><div class="slide-caption">Interface principale</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/python_mdp.png" alt="Générateur"/><div class="slide-caption">Code générateur de mots de passe</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/python_ports.png" alt="Scanner"/><div class="slide-caption">Scanner de ports</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/python_force.png" alt="Vérificateur"/><div class="slide-caption">Vérificateur de force</div></div>
+      </div>
+      <button class="proj-carousel-btn proj-carousel-prev" onclick="ProjCarousel.prev('modal-python-proj')"><i class="fas fa-chevron-left"></i></button>
+      <button class="proj-carousel-btn proj-carousel-next" onclick="ProjCarousel.next('modal-python-proj')"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="proj-carousel-dots">
+      <div class="proj-dot active" onclick="ProjCarousel.go('modal-python-proj',0)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-python-proj',1)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-python-proj',2)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-python-proj',3)"></div>
+    </div>
     <p class="modal-desc">
       <strong>Contexte :</strong> Projet réalisé en cours de formation pour approfondir mes connaissances en cybersécurité et en Python.<br/><br/>
       <strong>Ce que j'ai développé :</strong><br/>
@@ -488,8 +515,25 @@
 <div class="modal-overlay" id="modal-php">
   <div class="modal-box">
     <button class="modal-close">&times;</button>
-    <img src="assets/images/projects/php.png" class="modal-img" alt="PHP"/>
     <h2 class="modal-title">🛠️ Gestion Matériel PHP</h2>
+    <div class="proj-carousel">
+      <div class="proj-carousel-track">
+        <div class="proj-carousel-slide"><img src="assets/images/projects/php.png" alt="Interface principale"/><div class="slide-caption">Interface principale</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/php_dolibarr.png" alt="Utilisation Dolibarr"/><div class="slide-caption">Utilisation de Dolibarr ERP/CRM</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/php_recherche.png" alt="Système de recherche"/><div class="slide-caption">Système de recherche par client, matériel ou date</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/php_interface.png" alt="Enregistrement matériels"/><div class="slide-caption">Interface d'enregistrement des matériels</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/php_bdd.png" alt="Schéma BDD"/><div class="slide-caption">Schéma de base de données MySQL</div></div>
+      </div>
+      <button class="proj-carousel-btn proj-carousel-prev" onclick="ProjCarousel.prev('modal-php')"><i class="fas fa-chevron-left"></i></button>
+      <button class="proj-carousel-btn proj-carousel-next" onclick="ProjCarousel.next('modal-php')"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="proj-carousel-dots">
+      <div class="proj-dot active" onclick="ProjCarousel.go('modal-php',0)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-php',1)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-php',2)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-php',3)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-php',4)"></div>
+    </div>
     <p class="modal-desc">
   <strong>Contexte :</strong> Stage chez Bidouilles et Informatique à Melle (mai–juin 2025). L'entreprise avait besoin d'un outil pour gérer les matériels déposés par les clients en complément de Dolibarr ERP/CRM.<br/><br/>
   <strong>Ce que j'ai développé :</strong><br/>
@@ -508,8 +552,19 @@
 <div class="modal-overlay" id="modal-bulma">
   <div class="modal-box">
     <button class="modal-close">&times;</button>
-    <img src="assets/images/projects/bulma.png" class="modal-img" alt="Bulma"/>
     <h2 class="modal-title">🎨 Projet Bulma</h2>
+    <div class="proj-carousel">
+      <div class="proj-carousel-track">
+        <div class="proj-carousel-slide"><img src="assets/images/projects/bulma.png" alt="Interface"/><div class="slide-caption">Interface principale</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/bulma_code.png" alt="Code PHP"/><div class="slide-caption">Code PHP</div></div>
+      </div>
+      <button class="proj-carousel-btn proj-carousel-prev" onclick="ProjCarousel.prev('modal-bulma')"><i class="fas fa-chevron-left"></i></button>
+      <button class="proj-carousel-btn proj-carousel-next" onclick="ProjCarousel.next('modal-bulma')"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="proj-carousel-dots">
+      <div class="proj-dot active" onclick="ProjCarousel.go('modal-bulma',0)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-bulma',1)"></div>
+    </div>
     <p class="modal-desc">
   <strong>Contexte :</strong> Projet académique BTS SIO pour apprendre le framework CSS Bulma et le développement web dynamique avec PHP et MySQL.<br/><br/>
   <strong>Ce que j'ai développé :</strong><br/>
@@ -527,8 +582,21 @@
 <div class="modal-overlay" id="modal-delices">
   <div class="modal-box">
     <button class="modal-close">&times;</button>
-    <img src="assets/images/projects/delices.jpg" class="modal-img" alt="Délices"/>
     <h2 class="modal-title">🍰 Les Délices de Fatou</h2>
+    <div class="proj-carousel">
+      <div class="proj-carousel-track">
+        <div class="proj-carousel-slide"><img src="assets/images/projects/delices.jpg" alt="Site"/><div class="slide-caption">Aperçu général</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/delices_recettes.png" alt="Recettes"/><div class="slide-caption">Page Recettes</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/delices_contact.png" alt="Contact"/><div class="slide-caption">Page Contact</div></div>
+      </div>
+      <button class="proj-carousel-btn proj-carousel-prev" onclick="ProjCarousel.prev('modal-delices')"><i class="fas fa-chevron-left"></i></button>
+      <button class="proj-carousel-btn proj-carousel-next" onclick="ProjCarousel.next('modal-delices')"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="proj-carousel-dots">
+      <div class="proj-dot active" onclick="ProjCarousel.go('modal-delices',0)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-delices',1)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-delices',2)"></div>
+    </div>
     <p class="modal-desc">
   <strong>Contexte :</strong> Projet réalisé en cours de formation BTS SIO pour maîtriser les bases du HTML et CSS.<br/><br/>
   <strong>Ce que j'ai développé :</strong><br/>
@@ -546,8 +614,25 @@
 <div class="modal-overlay" id="modal-stage">
   <div class="modal-box">
     <button class="modal-close">&times;</button>
-    <img src="assets/images/projects/stage.png" class="modal-img" alt="Stage"/>
     <h2 class="modal-title">📋 Application Demande de Stage</h2>
+    <div class="proj-carousel">
+      <div class="proj-carousel-track">
+        <div class="proj-carousel-slide"><img src="assets/images/projects/stage.png" alt="Formulaire"/><div class="slide-caption">Formulaire de demande de stage</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/stage_admin.png" alt="Espace admin"/><div class="slide-caption">Espace administrateur</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/stage_prisma.png" alt="Prisma Studio"/><div class="slide-caption">Base de données avec Prisma Studio</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/stage_vercel.png" alt="Vercel"/><div class="slide-caption">Déploiement sur Vercel</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/stage_api.png" alt="Code API"/><div class="slide-caption">Code de l'API</div></div>
+      </div>
+      <button class="proj-carousel-btn proj-carousel-prev" onclick="ProjCarousel.prev('modal-stage')"><i class="fas fa-chevron-left"></i></button>
+      <button class="proj-carousel-btn proj-carousel-next" onclick="ProjCarousel.next('modal-stage')"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="proj-carousel-dots">
+      <div class="proj-dot active" onclick="ProjCarousel.go('modal-stage',0)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-stage',1)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-stage',2)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-stage',3)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-stage',4)"></div>
+    </div>
     <p class="modal-desc">
   <strong>Contexte :</strong> Stage chez Bidouilles et Informatique à Melle (janvier–mars 2026). L'entreprise souhaitait une application web moderne pour recevoir et gérer les demandes de stage.<br/><br/>
   <strong>Ce que j'ai développé :</strong><br/>
@@ -566,8 +651,21 @@
 <div class="modal-overlay" id="modal-ludotheque">
   <div class="modal-box">
     <button class="modal-close">&times;</button>
-    <img src="assets/images/projects/ludotheque.png" class="modal-img" alt="Ludothèque Java"/>
     <h2 class="modal-title">♟️ Ludothèque Java</h2>
+    <div class="proj-carousel">
+      <div class="proj-carousel-track">
+        <div class="proj-carousel-slide"><img src="assets/images/projects/ludotheque.png" alt="Interface"/><div class="slide-caption">Interface principale</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/ludotheque_catalogue.png" alt="Catalogue"/><div class="slide-caption">Gestion catalogue, emprunts et retours</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/ludotheque_code.png" alt="Code"/><div class="slide-caption">Code Interface Java Swing</div></div>
+      </div>
+      <button class="proj-carousel-btn proj-carousel-prev" onclick="ProjCarousel.prev('modal-ludotheque')"><i class="fas fa-chevron-left"></i></button>
+      <button class="proj-carousel-btn proj-carousel-next" onclick="ProjCarousel.next('modal-ludotheque')"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="proj-carousel-dots">
+      <div class="proj-dot active" onclick="ProjCarousel.go('modal-ludotheque',0)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-ludotheque',1)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-ludotheque',2)"></div>
+    </div>
     <p class="modal-desc">
   <strong>Contexte :</strong> Projet académique réalisé en BTS SIO pour maîtriser la programmation orientée objet en Java et la connexion à une base de données.<br/><br/>
   <strong>Ce que j'ai développé :</strong><br/>
@@ -587,8 +685,21 @@
 <div class="modal-overlay" id="modal-vente">
   <div class="modal-box">
     <button class="modal-close">&times;</button>
-    <img src="assets/images/projects/vente.png" class="modal-img" alt="Gestion Réparations"/>
     <h2 class="modal-title">🔧 Gestion des Réparations</h2>
+    <div class="proj-carousel">
+      <div class="proj-carousel-track">
+        <div class="proj-carousel-slide"><img src="assets/images/projects/vente.png" alt="Interface"/><div class="slide-caption">Interface principale</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/vente_suivi.png" alt="Suivi"/><div class="slide-caption">Suivi des réparations</div></div>
+        <div class="proj-carousel-slide"><img src="assets/images/projects/vente_bdd.png" alt="BDD"/><div class="slide-caption">Base de données MySQL</div></div>
+      </div>
+      <button class="proj-carousel-btn proj-carousel-prev" onclick="ProjCarousel.prev('modal-vente')"><i class="fas fa-chevron-left"></i></button>
+      <button class="proj-carousel-btn proj-carousel-next" onclick="ProjCarousel.next('modal-vente')"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="proj-carousel-dots">
+      <div class="proj-dot active" onclick="ProjCarousel.go('modal-vente',0)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-vente',1)"></div>
+      <div class="proj-dot" onclick="ProjCarousel.go('modal-vente',2)"></div>
+    </div>
 <p class="modal-desc">
   <strong>Contexte :</strong> Projet académique BTS SIO pour concevoir une application web de gestion métier complète avec PHP et MySQL.<br/><br/>
   <strong>Ce que j'ai développé :</strong><br/>

@@ -115,3 +115,38 @@ document.addEventListener('DOMContentLoaded', () => {
   Modal.init();
   CSL.go(0); // Positionner le carousel RGPD sur le module 1
 });
+
+/* ── Carrousels Projets ── */
+const ProjCarousel = {
+  instances: {},
+
+  init(id, total) {
+    this.instances[id] = { cur: 0, total };
+    this.go(id, 0);
+  },
+
+  go(id, index) {
+    const inst = this.instances[id];
+    if (!inst) return;
+    inst.cur = ((index % inst.total) + inst.total) % inst.total;
+    const track = document.querySelector(`#${id} .proj-carousel-track`);
+    if (track) track.style.transform = `translateX(-${inst.cur * 100}%)`;
+    document.querySelectorAll(`#${id} .proj-dot`).forEach((d, i) => {
+      d.classList.toggle('active', i === inst.cur);
+    });
+  },
+
+  prev(id) { this.go(id, this.instances[id].cur - 1); },
+  next(id) { this.go(id, this.instances[id].cur + 1); }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  ProjCarousel.init('modal-php', 5);
+  ProjCarousel.init('modal-stage', 5);
+  ProjCarousel.init('modal-memory', 2);
+  ProjCarousel.init('modal-vente', 3);
+  ProjCarousel.init('modal-ludotheque', 3);
+  ProjCarousel.init('modal-python-proj', 4);
+  ProjCarousel.init('modal-bulma', 2);
+  ProjCarousel.init('modal-delices', 3);
+});

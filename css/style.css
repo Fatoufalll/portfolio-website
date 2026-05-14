@@ -218,3 +218,17 @@ footer span{color:var(--rose)}
   .hero-photo{display:none}
   .certif-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+/* ── Carrousel projet ── */
+.proj-carousel{position:relative;border-radius:12px;overflow:hidden;margin-bottom:18px;background:var(--bg3)}
+.proj-carousel-track{display:flex;transition:transform .38s cubic-bezier(.4,0,.2,1)}
+.proj-carousel-slide{min-width:100%;position:relative}
+.proj-carousel-slide img{width:100%;height:300px;object-fit:contain;background:#fff;display:block}
+.proj-carousel-slide .slide-caption{padding:8px 12px;background:var(--bg3);font-size:.75rem;color:var(--muted);border-top:1px solid var(--border)}
+.proj-carousel-btn{position:absolute;top:45%;transform:translateY(-50%);background:rgba(174,104,117,.75);border:1.5px solid var(--rose);color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .25s;z-index:10}
+.proj-carousel-btn:hover{background:var(--rose);transform:translateY(-50%) scale(1.1)}
+.proj-carousel-prev{left:8px}
+.proj-carousel-next{right:8px}
+.proj-carousel-dots{display:flex;justify-content:center;gap:6px;padding:8px 0}
+.proj-dot{width:7px;height:7px;border-radius:50%;background:var(--border-h);cursor:pointer;border:none;transition:all .3s}
+.proj-dot.active{background:var(--rose);transform:scale(1.3)}
